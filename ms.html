@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Myla Steiger Javascript Example</h1>
+<h2>My contact information: </h2>
+<p id="name"></p>
+<p id="address"></p>
+<p id="cityState"></p>
+<p id="email"></p>
+<p id="phone"></p>
+
+
+<script>
+document.getElementById("name").innerHTML = "Myla Steiger";
+</script>
+<script>
+    document.getElementById("address").innerHTML = "5886 Morrow Blackhawk Rd";
+    </script>
+    <script>
+        document.getElementById("cityState").innerHTML = "Morrow, Ohio 45152";
+        </script>
+        <script>
+            document.getElementById("phone").innerHTML = "(513) 293-8919";
+            </script>
+            <script>
+                document.getElementById("email").innerHTML = "steiger.myla@gmail.com";
+                </script>
+
+     <p>Here are some of my favorite things to make for dinner! Click the button for the recipe. </p>           
+
+    <button onclick="recipelink(this)" value="https://www.foodnetwork.com/recipes/ina-garten/meat-loaf-recipe-1921718">Meatloaf</button>
+    <button onclick="recipelink(this)" value="https://www.thepioneerwoman.com/food-cooking/recipes/a11483/perfect-potatoes-au-gratin/">Au Gratin Potatoes</button>
+    <button onclick="recipelink(this)" value="https://www.allrecipes.com/recipe/134230/spinach-salad-with-warm-bacon-mustard-dressing/">Spinach Salad with Hot Bacon Dressing</button>
+    <button onclick="recipelink(this)" value="https://www.foodnetwork.com/recipes/ina-garten/raspberry-cheesecake-recipe-1942041">Raspberry Cheesecake</button>
+<h3>I hope you enjoy these favorite recipes! </h3>
+<script>
+    function recipelink(link){
+        window.open(link.value);
+    };
+</script>
+</body>
+</html> 
